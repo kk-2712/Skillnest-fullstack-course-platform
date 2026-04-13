@@ -210,6 +210,10 @@ body { margin: 0; }
   position: relative;
   overflow: hidden;
 }
+.app.dark .primary-btn {
+  background: #2ecc8a;
+  color: #0f1a14;
+}
 
 .primary-btn::after {
   content: '';
@@ -526,7 +530,14 @@ body { margin: 0; }
   position: relative;
   overflow: hidden;
 }
+.app.dark .enroll-btn:not(.enrolled) {
+  background: #2ecc8a;
+  color: #0f1a14;
+}
 
+.app.dark .enroll-btn:hover:not(:disabled):not(.enrolled) {
+  background: #25b578;
+}
 .enroll-btn::after {
   content: '';
   position: absolute;
@@ -549,6 +560,11 @@ body { margin: 0; }
   border: 1px solid #b8e8d4;
   cursor: default;
   font-weight: 600;
+}
+.app.dark .enroll-btn.enrolled {
+  background: #275d42;
+  color: #2ecc8a;
+  border: 1px solid #1e4d30;
 }
 
 .enroll-btn:disabled { opacity: 0.6; cursor: not-allowed; }
