@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const API = 'http://localhost:5001/api';
+const API = 'https://skillnest-backend-kvc2.onrender.com/api';
 
 // Category → emoji mapping for card thumbnails
 const categoryEmoji = {
