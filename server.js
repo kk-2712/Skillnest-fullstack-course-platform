@@ -8,29 +8,52 @@ const courseRoutes = require('./routes/courseRoutes');
 
 const app = express();
 
-// Middleware
-app.use(cors());
+/* =========================
+   🔥 CORS FIX (IMPORTANT)
+========================= */
+app.use(
+  cors({
+    origin: [
+      'http://localhost:3000',
+      'https://skillnest-fullstack-course-platform.vercel.app',
+    ],
+    credentials: true,
+  })
+);
+
+/* =========================
+   Middleware
+========================= */
 app.use(express.json());
 
-// Routes
+/* =========================
+   Routes
+========================= */
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
 
-// Health check
+/* =========================
+   Health Check
+========================= */
 app.get('/', (req, res) => {
-  res.json({ message: 'SkillNest API is running' });
+  res.json({ message: 'SkillNest API is running 🚀' });
 });
 
-// Connect to MongoDB then start server
+/* =========================
+   Mongo + Server Start
+========================= */
 const PORT = process.env.PORT || 5000;
 
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
-    console.log('MongoDB connected');
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    console.log('MongoDB connected ✅');
+
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT} 🚀`);
+    });
   })
   .catch((err) => {
-    console.error('MongoDB connection error:', err.message);
+    console.error('MongoDB connection error ❌:', err.message);
     process.exit(1);
   });
