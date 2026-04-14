@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API = 'http://localhost:5001/api';
+const API = 'https://skillnest-backend-kvc2.onrender.com/api';
 
 function Login({ onLogin }) {
   const [isRegister, setIsRegister] = useState(false);
