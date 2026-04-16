@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-const API = 'http://localhost:5001/api';
-
+const API =process.env.REACT_APP_API;
 function Login({ onLogin }) {
   const [isRegister, setIsRegister] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', password: '' });

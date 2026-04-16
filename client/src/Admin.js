@@ -1,8 +1,9 @@
+
 import { useState, useEffect } from 'react';
 import CourseForm from './CourseForm';
 import './Admin.css';
 
-const API = 'http://localhost:5001/api';
+const API =process.env.REACT_APP_API;
 
 // Single course card in the admin grid
 function AdminCourseCard({ course, onEdit, onDelete }) {
@@ -208,3 +209,4 @@ function Admin({ token }) {
 }
 
 export default Admin;
+console.log("API URL:", process.env.REACT_APP_API);

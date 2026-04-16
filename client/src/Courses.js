@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const API  = 'http://localhost:5001/api';
+const API =process.env.REACT_APP_API;
 
 // Category → emoji mapping for card thumbnails
 const categoryEmoji = {

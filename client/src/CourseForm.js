@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const API = 'http://localhost:5001/api';
+const API =process.env.REACT_APP_API;
 
 function CourseForm({ token, course, onSuccess, onCancel }) {
   console.log("TOKEN INSIDE FORM:", token); // ✅ safe debug
