@@ -10,6 +10,10 @@ SkillNest is a full-stack MERN application that allows users to discover, enroll
 
 🔗 Documentation: https://skillnestproject.wordpress.com
 
+✅ADMIN TEST CREDENTIAL -
+ UserName : karuka.kalra@gmail.com
+ Password : karuka@1234
+
 
 ✨ Features
 
