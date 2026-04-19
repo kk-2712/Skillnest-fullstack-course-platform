@@ -94,10 +94,6 @@ Full-stack deployment (Vercel + Render)
 
 Karuka Kalra
 
-**Note on WordPress Deployment**
-
-The WordPress website for SkillNest has been deployed using WordPress.com due to ease of setup and accessibility.
-A self-hosted deployment (e.g., via Hostinger) can be configured if required, but for the scope of this assignment, the current deployment demonstrates all required functionality, design, and structure effectively.
 
 
 PROJECT MOCKUP:
