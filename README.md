@@ -45,7 +45,7 @@ Real-time course dashboard management
 
 🧱 Tech Stack
 
-Frontend: React.js, CSS, Axios, React Router
+Frontend: React.js, CSS, React Router
 
 Backend: Node.js, Express.js
 
